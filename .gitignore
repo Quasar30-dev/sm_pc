@@ -1,0 +1,15 @@
+# build trees and what the tools write
+/build/
+/out/
+/.vs/
+CMakeUserPresets.json
+__pycache__/
+*.pyc
+
+# never commit game data
+*.iso
+*.ISO
+*.bin
+*.WAD
+*.wad
+*.BIK
