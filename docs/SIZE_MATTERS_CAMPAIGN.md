@@ -1134,7 +1134,13 @@ once exported). NOT BUILT.
 `Lvl05Eye` x8, `Lvl05Image` x15, `Lvl05UFO` x19, `Lvl05Umbrella` x6, `Lvl05WaveIsle`, `Lvl05LightTrail`,
 `Lvl05Secret`, `DreamMirror` x2, `StupidDoor` x6, `QuarkDoctor` x14 and `FlyingHypo` x70 with nine
 `EnemyRespawner`s and five `enemyWave`s, a `Sharkagator` with two fins, a `wallJumpTrigger`, nine `Hookshot`s,
-the Sprout-O-Matic's soil. NOT BUILT beyond what the shared classes do.
+the Sprout-O-Matic's soil. NOT BUILT beyond what the shared classes do, with one exception that is written but
+NOT YET PROVEN by any run: `Lvl05Portal` (`src/sm/classes_level05.cpp`; init 0x18a2e0, update 0x18a4a8) - within
+30 m of the hero, stepping to the point half a metre before a portal holds him, a second later carries him over
+one second to its `newPos`, and a portal with a `respawner` asks for it after 5 s nearby; a `levelChanger` portal
+exists only once level 6 is open in the save (it then leaves for level 0x17), so natively it is never there; a
+portal with no `newPos` changes to level 6. The level's way is start, the continue points 3, 10, 15 and 17, the
+portal at (-116.5, 35, 0.6), four dream rooms each with its respawners, the mini-boss.
 
 ### The pause menu's native state
 
